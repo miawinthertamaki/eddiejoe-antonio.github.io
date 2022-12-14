@@ -17,17 +17,17 @@ main {
 
 section {
     flex-direction: column;
-    overflow:visible;
     width: 50%;
     z-index: 2;
+    margin-top: 30px;
 }
 
 aside {
     display: flex;
-    overflow: visible;
     flex-direction: column;
     width: 50%;
     z-index: 1;
+    margin-top: 30px;
 }
 
 
@@ -37,13 +37,33 @@ aside {
     line-height: 5vh;
 }
 
-
 .bigBreak {
     line-height: 15vh;
 }
 
 .biggestBreak {
     line-height: 75vh;
+}
+
+.navMenu {
+    overflow: hidden;
+    background-color: white;
+    position: fixed; /* Set the navbar to fixed position */
+    top: 0; /* Position the navbar at the top of the page */
+    width: 100%; /* Full width */
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    z-index: 3;
+}
+
+.navMenu a {
+    float: right;
+    display: block;
+    color: black;
+    margin-right: 5%;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
 }
 
 .rotatedTitle {
@@ -73,7 +93,6 @@ aside {
 }
 
 .openingInstructions {
-    overflow: visible;
     margin-left: 75%;
     margin-right: -50%;
     margin-top: 20%;
@@ -112,15 +131,6 @@ aside {
 
 /*** IDs: Unique object formatting for ids in webpage ***/
 
-#topTitle {
-    position: fixed;
-    margin-left: 90%;
-    text-decoration: none;
-    color: black;
-    font-size: 25px;
-    font-family: Arial, Helvetica, sans-serif;
-}
-    
 a:hover {
     font-weight: bold;
 }
@@ -141,7 +151,6 @@ a:active {
     color: #dedede;
     z-index: 2;
     margin-top: 0%;
-    overflow: visible;
     margin-left: 75%;
     margin-right: -50%;
     font-size: 50px;
@@ -149,7 +158,11 @@ a:active {
 }
 
 #last-section {
-    background-color: #dedede;
+    background-color: black;
+}
+
+#last-aside {
+    background-color: black;
 }
 
 /* CAPTIONS */
