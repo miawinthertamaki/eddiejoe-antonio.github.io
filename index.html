@@ -18,12 +18,6 @@
 		<link rel='stylesheet' href='https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v4.4.2/mapbox-gl-geocoder.css' type='text/css' />
 	</head>
 	<body>
-		<!--Establishing scroller
-		<div id="map"></div>
-		<div id="story"></div>
-		<script src="visualizations/config.js"></script>
-		<script src="visualizations/storytelling.js"></script>-->
-
 		<!--Return button-->
 		<div class="navMenu">
 			<a id="topTitle" href="index.html">mesh!</a>
@@ -46,16 +40,25 @@
 				<br class="bigBreak">
 
 			</section>
-		<aside>
-			<!--<img id="openingShot" src="https://docs.nycmesh.net/img/nycmesh-570-227-link.png">-->
-			<div id="map" id="map-container">
-			</div>
-		</aside>
-		
 		</main>
 		<br class="bigBreak">
 		<br class="bigBreak">
-
+		<!--Establishing scroller>-->
+		<main id="map-frame">
+			<iframe
+			src="./mb_scrollytelling.html"
+			frameborder="0" 
+			cellspacing="0"
+			width="100%"
+			height="100%"
+			padding-bottom="25px"
+			style="border-style: none;"
+		  ></iframe>
+		</main>
+		<script src="visualizations/config.js"></script>
+		<script src="visualizations/storytelling.js"></script>
+		<br class="bigBreak">
+		<br class="bigBreak">
 		<!--Scatterplot-->
 		<main>
 			<section>
@@ -117,8 +120,9 @@
 			<section id="last-section">
 				<br class="bigBreak">
 				<div class="descriptions">
-					<p>04:</p>
-					<p> a view from everywhere</p>
+					<!--Extra text-->
+					<!--<p>04:</p>
+					<p> a view from everywhere</p>-->
 				</div>
 				<div>
 					<h1 class="rotatedTitle" id="lastTitle">A View</h1>
@@ -140,7 +144,6 @@
 	<!--Panorama images-->
 	<div id="grid-svg"></div>
 	<script src="scripts/grid_panoramas.js"></script>
-
 	</body>
 </html>
 
