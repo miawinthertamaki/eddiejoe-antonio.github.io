@@ -102,7 +102,7 @@ d3.json('data/nodes_cleanedsorted.json')
 							})
 							.attr("width", r)
 							.attr("height", r)
-							.style("fill", "grey")
+							.style("fill", "white")
 							.style("opacity", .25)					
 							.on("mouseover",function(d){
 								var xPosition = xScale(d.requestDate);
@@ -149,7 +149,7 @@ d3.json('data/nodes_cleanedsorted.json')
 							})
 							.on("mouseout",function(d){
 								   d3.select(this)
-										.style("fill","grey")
+										.style("fill","white")
 										.style("opacity", .25)
 										.attr("height", function(d){
 											return r;

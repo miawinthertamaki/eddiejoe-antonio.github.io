@@ -74,7 +74,7 @@ svg.selectAll('rect')
             return 0;
             //return xScale(year.New_Nodes);
         })
-        .style("fill", "black")
+        .style("fill", "white")
         .style("opacity", 1)
         .on("mouseover",function(year){
                 d3.select(this)
@@ -83,7 +83,7 @@ svg.selectAll('rect')
             })
         .on("mouseout",function(year){
                     d3.select(this)
-                        .style("fill","black")
+                        .style("fill","white")
             });
 
 //Create X axis
@@ -197,6 +197,7 @@ d3.select("#month-event-listener")
         .append('rect')
         .attr("class", "barchart")
         .attr("id", "month-bars")
+        .style("fill","white")
         .attr("x", padding*2)
         .attr("y", function(dataset) {
             return yScaleMonth(dataset.Index_Value);
@@ -215,7 +216,7 @@ d3.select("#month-event-listener")
         })
         .on("mouseout",function(d){
                 d3.select(this)
-                    .style("fill","black")
+                    .style("fill","white")
         });
 
     // Create animation, moving across time in the X dimension
@@ -265,6 +266,7 @@ d3.select("#year-event-listener")
             .attr("class", "barchart")
             .attr("id", "year-bars")
             .attr("x", padding*2)
+            .style("fill","white")
             .attr("y", function(year, i) {
                 return yScaleYear(year.Index_Value) + (r * i);
             })
@@ -280,7 +282,7 @@ d3.select("#year-event-listener")
             })
             .on("mouseout",function(year){
                     d3.select(this)
-                        .style("fill","black")
+                        .style("fill","white")
             });
 
 
